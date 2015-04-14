@@ -1,4 +1,4 @@
-## Greg Robbins and Grant Winney
+## Greg and Grant
 
 We used C# to develop the solution, and [nUnit](http://www.nunit.org/) to test it.
 
