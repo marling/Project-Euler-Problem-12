@@ -29,3 +29,9 @@ We're only interested in Triangle Numbers, so only test those. This means instea
 
         i++;
     }
+
+We ran into one more snag at the end. We thought we had the right code to generate the solution, but it still wouldn't end. Pausing execution showed a huge number, larger than the correct solution. We had completely overshot the target number.
+
+The culprit was this line. It needed to be `>=`, since there's (apparently) no Triangle Number with _exactly_ 500 divisors, and the instructions specify _"over five hundred divisors"_.
+
+    if (result.Count == divisors)
